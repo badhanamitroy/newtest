@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #202020;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    background-color: #303030;
+    color: white;
+    cursor: pointer;
+}
+
+.profile img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #202020;
+    padding: 10px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #383838;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categories button {
+    background-color: #303030;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video img {
+    width: 100%;
+    border-radius: 8px;
+}
